@@ -289,4 +289,4 @@ loadHDevTools = do
     mConfig <- findFile (== ".hdevtoolsrc") dir
     perProject <- maybe (return []) (\f -> words <$> readFile f) mConfig
     args0 <- getArgs
-    withArgs (args0 ++ perProject) $ cmdArgs_ (full progName)
+    withArgs (perProject ++ args0) $ cmdArgs_ (full progName)

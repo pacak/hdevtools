@@ -12,6 +12,7 @@ import Data.Version (showVersion)
 import Paths_hdevtools (version)
 import qualified Config
 import System.Console.CmdArgs.Implicit
+import System.Console.CmdArgs.Explicit (splitArgs)
 import System.Directory (getCurrentDirectory)
 import System.Environment (getProgName, withArgs, getArgs)
 import System.FilePath (takeDirectory)
